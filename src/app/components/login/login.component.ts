@@ -17,15 +17,19 @@ export class LoginComponent implements OnInit {
     senha: ''
   }
 
+   ImagePath ='assets/img/logo-creanet.svg';
+
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(3));
 
   constructor(
+  ImagePath : String,
     private toast: ToastrService,
     private service: AuthService,
     private router: Router) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+   }
 
   logar() {
     this.service.authenticate(this.creds).subscribe(resposta => {
