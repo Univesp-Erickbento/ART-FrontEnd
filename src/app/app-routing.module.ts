@@ -19,8 +19,8 @@ import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
- // {
-    // path: '', component: NavComponent, canActivate: [AuthGuard], children: [
+  {
+     path: '', component: NavComponent, canActivate: [AuthGuard], children: [
        { path: 'home', component: HomeComponent },
 
       // { path: 'tecnicos',            component:   TecnicoListComponent },
@@ -38,8 +38,8 @@ const routes: Routes = [
       // { path: 'chamados/update/:id',            component:   ChamadoUpdateComponent },
       // { path: 'chamados/read/:id',              component:     ChamadoReadComponent },
     ]
- // }
-//];
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

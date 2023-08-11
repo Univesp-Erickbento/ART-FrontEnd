@@ -72,12 +72,12 @@ import { NgxMaskModule,IConfig } from 'ngx-mask';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // Forms
+    //Forms
     FormsModule,
     ReactiveFormsModule,
-    // Requisições http
+    //Requisições http,
     HttpClientModule,
-    // Angular Material
+   // AngularMaterial,
     MatFormFieldModule,
     MatPaginatorModule,
     MatCheckboxModule,
